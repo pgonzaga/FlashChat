@@ -86,24 +86,16 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTextfield.endEditing(true)
     }
     
-    
-    
     //TODO: Declare configureTableView here:
 
     func configureTableView() {
         messageTableView.rowHeight = UITableViewAutomaticDimension
         messageTableView.estimatedRowHeight = 120.0
     }
-    
-    
-    
+
     ///////////////////////////////////////////
     
-    //MARK:- TextField Delegate Methods
-    
-    
-
-    
+    //MARK:- TextField Delegate Methods    
     //TODO: Declare textFieldDidBeginEditing here:
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -112,9 +104,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.view.layoutIfNeeded()
         }
     }
-    
-    
-    
+
     //TODO: Declare textFieldDidEndEditing here:
 
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -123,12 +113,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.view.layoutIfNeeded()
         }
     }
-    
-
-    
+ 
     ///////////////////////////////////////////
-    
-    
+
     //MARK: - Send & Recieve from Firebase
     
     @IBAction func sendPressed(_ sender: AnyObject) {
@@ -179,7 +166,5 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
 
     }
-    
-
-
+ 
 }
